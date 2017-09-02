@@ -26,5 +26,5 @@ alert("儲存成功")
     $("#date").val("");
     $("#category").val("");
     $("#item").val("");
-    $("#date").val("");
+    $("#cost").val("");
 });
