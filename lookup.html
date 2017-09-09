@@ -11,8 +11,59 @@
 		<input type="radio" name="01pp" value="curMonth">本月份<br>
 		<input type="radio" name="01pp" value="range">指定期間<br>
 		<input type="date" name="" id="formTime"> - <input type="date" name="" id="toTime"><br>
-
-<button class="btn btn-primary little" id="lookup">查詢</button>
+		<button class="btn btn-primary little" id="lookup">查詢</button>
+		<table class="table table-striped">
+			<thead>
+			<tr>
+				<th>類別</th>
+				<th>金額</th>
+				<th>比例</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>食物</td>
+					<td id="eatCost">0</td>
+					<td id="eatProportion">0%</td>
+				</tr>
+				<tr>
+					<td>衣物</td>
+					<td id="clothesCost">0</td>
+					<td id="clothesProportion">0%</td>
+				</tr>
+				<tr>
+					<td>住屋</td>
+					<td id="liveCost">0</td>
+					<td id="liveProportion">0%</td>
+				</tr>
+				<tr>
+					<td>交通</td>
+					<td id="travelCost">0</td>
+					<td id="travelProportion">0%</td>
+				</tr>
+				<tr>
+					<td>教育</td>
+					<td id="teachCost">0</td>
+					<td id="teachProportion">0%</td>
+				</tr>
+				<tr>
+					<td>娛樂</td>
+					<td id="playCost">0</td>
+					<td id="playProportion">0%</td>
+				</tr>
+				<tr>
+					<td>其他</td>
+					<td id="othersCost">0</td>
+					<td id="othersProportion">0%</td>
+				</tr>
+				<tr>
+					<td>總計</td>
+					<td id="totalCost">0</td>
+					<td>100%</td>
+				</tr>
+			</tbody>
+			
+		</table>
 		<table class="table" >
 			<thead>
 				<th>日期</th>
@@ -21,10 +72,9 @@
 				<th>金額</th>
 			</thead>
 			<tbody id="accountingTable">
-
 			</tbody>
 		</table>
-				<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
 		<script type="text/javascript" src="js/fdb-all.min.js"></script>
 		<script type="text/javascript" src="js/lookup.js"></script>
 	</body>
