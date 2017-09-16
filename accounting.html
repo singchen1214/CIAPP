@@ -2,15 +2,14 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<title>一起來記帳</title>
 	</head>
 	<center><body>
 		<h1>記帳</h1>
 		日期:<input type="date" name="date" id=date><br>
-		類別:<select id="category">
-			<option val="">請選擇項目</option>
+		類別:<select id="category"><option val="">請選擇項目</option>
 			<option val="eat">食物</option>
 			<option val="clothes">衣物</option>
 			<option val="live">住屋</option>
@@ -21,7 +20,9 @@
 		</select><br>
 		項目:<input type="" name="item" id="item"><br>
 		金額:<input type="" name="cost" id="cost"><br>
-		<button  type="button"  id=submit>送出</button>
+		<button  type="button" class="btn btn-primary btn-lg" id=submit>送出</button>
+		<button  type="button" class="btn btn-warning btn-lg" id=submit onclick="window.location.href='index.html'">返回</button>
+
 
 		<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
 		<script type="text/javascript" src="js/fdb-all.min.js"></script>

@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<title>支出查詢</title>
 	</head>
 	<body>
 		<h1>支出查詢</h1>
-		<input type="radio" name="01pp" value="curMonth">本月份<br>
-		<input type="radio" name="01pp" value="range">指定期間<br>
+		<input type="radio" name="01pp" class="radio" value="curMonth">本月份<br>
+		<input type="radio" name="01pp" class="radio" value="range">指定期間<br>
 		<input type="date" name="" id="formTime"> - <input type="date" name="" id="toTime"><br>
 		<button class="btn btn-primary little" id="lookup">查詢</button>
 		<table class="table table-striped">
@@ -74,6 +74,7 @@
 			<tbody id="accountingTable">
 			</tbody>
 		</table>
+		<button  type="button" class="btn btn-warning btn-lg" id=submit onclick="window.location.href='index.html'">返回</button>
 		<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
 		<script type="text/javascript" src="js/fdb-all.min.js"></script>
 		<script type="text/javascript" src="js/lookup.js"></script>
